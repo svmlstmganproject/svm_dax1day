@@ -9,7 +9,7 @@ const Dax1DayBacktestData = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('https://node-server-svm.onrender.com/getDax1DayBacktestTaData');  // Updated endpoint
+                const response = await axios.get('https://svm-server1.onrender.com/getDax1DayBacktestTaData');  // Updated endpoint
                 setData(response.data);
                 setLoading(false);
             } catch (error) {
